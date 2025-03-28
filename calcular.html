@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Reajuste Salarial</title>
+    <link rel="stylesheet" href="/calcular.js">
+</head>
+<body>
+    <label for="salario">Salário Inicial: R$ </label>
+    <input type="number" id="salario" placeholder="Digite o salário" required>
+
+    <label for="classe">Classe: </label>
+    <select id="classe">
+        <option value="A">Classe A (5%)</option>
+        <option value="B">Classe B (6%)</option>
+        <option value="C">Classe C (7%)</option>
+    </select>
+
+    <label for="nivel">Nível: </label>
+    <select id="nivel">
+        <option value="1">Nível 1 (+0%)</option>
+        <option value="2">Nível 2 (+1%)</option>
+        <option value="3">Nível 3 (+2,5%)</option>
+    </select>
+
+    <button onclick="calcularReajuste()">Calcular Reajuste</button>
+
+    <h2 id="resultado"></h2>
+</body>
+</html>

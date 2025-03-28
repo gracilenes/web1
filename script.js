@@ -5,8 +5,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const password= document.getElementById("password").value;
     const message= document.getElementById("message");
 
-    const userCorrect = "admin";
-    const passCorrect = "12345";
+    const userCorrect = "Gracilene";
+    const passCorrect = "13572468";
 
     if (username === userCorrect && password === passCorrect) {
         message.style.color = "white"

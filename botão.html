@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Contalor</title>
+    <link rel="stylesheet" href="/index.html">
+</head>
+<body>
+    <h1>Contador</h1>
+    <p>Contagem: <span id="contador">0</span></p>
+    <button onclick="aumentarContador()">Clique para aumentar</button>
+
+    <script>
+        let contagem = 0
+        function aumentarContador() {
+            contagem++;
+            document.getElementById('contador').textContent = contagem;
+        }
+    </script>
+</body>
+</html>
